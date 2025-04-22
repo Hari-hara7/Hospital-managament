@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { db } from "../firebase";
 import { collection, addDoc, getDocs } from "firebase/firestore";
 import { FaUserPlus, FaUserInjured } from "react-icons/fa";
+import "./admin-dashboard.css";
 
 interface Patient {
   id: string;

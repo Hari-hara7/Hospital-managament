@@ -1,0 +1,39 @@
+/* patient-dashboard.css */
+.patient-dashboard {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .patient-dashboard h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+    text-align: center;
+  }
+  
+  .patient-dashboard .detail {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #374151;
+  }
+  
+  .patient-dashboard .detail strong {
+    color: #111827;
+  }
+  
+  .patient-dashboard .loading,
+  .patient-dashboard .error {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .patient-dashboard .error {
+    color: #dc2626;
+  }
+  

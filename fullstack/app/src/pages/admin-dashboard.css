@@ -1,0 +1,132 @@
+/* General Layout */
+body {
+    background-color: #f3f4f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Page Wrapper */
+  .admin-container {
+    padding: 2rem;
+    max-width: 90%;
+    margin: auto;
+    color: #1f2937;
+  }
+  
+  /* Header */
+  .admin-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 2rem;
+  }
+  
+  /* Form Container */
+  .form-section {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .form-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #1d4ed8;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    transition: border-color 0.3s ease;
+    background-color: #f9fafb;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #2563eb;
+    outline: none;
+    background-color: #fff;
+  }
+  
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  /* Upload Button */
+  button.upload-btn {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button.upload-btn:hover {
+    background-color: #1e40af;
+  }
+  
+  /* Patient List */
+  .patient-list {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+  }
+  
+  .patient-list h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #1d4ed8;
+  }
+  
+  .patient-list ul {
+    margin-top: 1rem;
+  }
+  
+  .patient-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .patient-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .patient-list p {
+    margin: 0.25rem 0;
+  }
+  
+  .patient-list span {
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  /* Responsive Grid */
+  @media (min-width: 768px) {
+    .grid-cols-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+  
