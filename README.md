@@ -57,7 +57,7 @@ Admins can add/manage patient records, and patients can securely view their pers
 
 ```bash
 # 1️⃣ Clone the repo
-git clone https://github.com/yourusername/hospital-management-firebase.git
+git clone https://github.com/Hari-hara7/Hospital-managament.git
 
 # 2️⃣ Go into the frontend directory
 cd frontend
