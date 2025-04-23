@@ -6,23 +6,23 @@ import "./patient-dashboard.css";
 const PatientDashboard = () => {
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);  // For error handling
+  const [error, setError] = useState<string | null>(null);  
 
   useEffect(() => {
     const fetchDetails = async () => {
       const user = auth.currentUser;
       if (user) {
-        const userEmail = user.email;  // Use the logged-in user's email
+        const userEmail = user.email;  
         const q = query(
           collection(db, "patients"),
-          where("email", "==", userEmail)  // Query based on email field
+          where("email", "==", userEmail)  
         );
 
         try {
           const querySnapshot = await getDocs(q);
 
           if (!querySnapshot.empty) {
-            const patientData = querySnapshot.docs[0].data();  // Get the first matched document
+            const patientData = querySnapshot.docs[0].data(); 
             setData(patientData);
           } else {
             setData(null);
@@ -40,7 +40,7 @@ const PatientDashboard = () => {
   }, []);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p className="text-red-500">{error}</p>;  // Display error message
+  if (error) return <p className="text-red-500">{error}</p>;  
 
   return (
     <div className="p-4 max-w-md mx-auto">
