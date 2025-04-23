@@ -20,7 +20,7 @@ export default function PatientView() {
     if (user) {
       const q = query(
         collection(db, "patients"),
-        where("uid", "==", user.uid) // Fetch patient data where the UID matches the logged-in user
+        where("uid", "==", user.uid) 
       );
       const querySnapshot = await getDocs(q);
       const data = querySnapshot.docs.map((doc) => ({
@@ -29,7 +29,7 @@ export default function PatientView() {
       })) as Patient[];
 
       if (data.length > 0) {
-        setPatient(data[0]); // Assume one patient record per user
+        setPatient(data[0]); 
       } else {
         alert("No patient data found for this user.");
       }
